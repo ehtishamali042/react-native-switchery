@@ -4,14 +4,14 @@ import { UseSwitchAnimationParams, UseSwitchStylesParams } from './types';
 import { resolveBorderStyle, resolveSwitchColors } from './utils';
 
 export const useSwitchAnimation = ({
-  isExpanded,
+  value,
   pillWidth,
   thumbSize,
   thumbMargin,
 }: UseSwitchAnimationParams) => {
-  const scaleXAnim = useRef(new Animated.Value(isExpanded ? 0 : 1)).current;
-  const scaleYAnim = useRef(new Animated.Value(isExpanded ? 0 : 1)).current;
-  const thumbPosition = useRef(new Animated.Value(isExpanded ? 1 : 0)).current;
+  const scaleXAnim = useRef(new Animated.Value(value ? 0 : 1)).current;
+  const scaleYAnim = useRef(new Animated.Value(value ? 0 : 1)).current;
+  const thumbPosition = useRef(new Animated.Value(value ? 1 : 0)).current;
   const isFirstRender = useRef(true);
 
   const animateToggle = useCallback(
@@ -48,8 +48,8 @@ export const useSwitchAnimation = ({
       return;
     }
 
-    animateToggle(isExpanded);
-  }, [animateToggle, isExpanded]);
+    animateToggle(value);
+  }, [animateToggle, value]);
 
   const thumbTranslateX = useMemo(
     () =>
@@ -76,7 +76,7 @@ export const useSwitchStyles = ({
   trackBorderWidth,
   thumbBorderColor,
   thumbBorderWidth,
-  isExpanded,
+  value,
   pillWidth,
   pillHeight,
   thumbSize,
@@ -92,9 +92,9 @@ export const useSwitchStyles = ({
       resolveBorderStyle(
         trackBorderColor,
         trackBorderWidth,
-        isExpanded ? 'rgba(0, 0, 0, 0.1)' : '#D1D1D6',
+        value ? 'rgba(0, 0, 0, 0.1)' : '#D1D1D6',
       ),
-    [isExpanded, trackBorderColor, trackBorderWidth],
+    [trackBorderColor, trackBorderWidth, value],
   );
 
   const thumbBorder = useMemo(

@@ -6,7 +6,7 @@ export type SwitchVariant =
   | 'info';
 
 export type SwitchProps = {
-  isExpanded: boolean;
+  value: boolean;
   activeColor?: string;
   inactiveColor?: string;
   thumbColor?: string;
@@ -31,7 +31,7 @@ export type SwitchMetrics = {
 };
 
 export type UseSwitchAnimationParams = {
-  isExpanded: boolean;
+  value: boolean;
   pillWidth: number;
   thumbSize: number;
   thumbMargin: number;
@@ -46,7 +46,7 @@ export type UseSwitchStylesParams = {
   trackBorderWidth?: number;
   thumbBorderColor?: string;
   thumbBorderWidth?: number;
-  isExpanded: boolean;
+  value: boolean;
   pillWidth: number;
   pillHeight: number;
   thumbSize: number;

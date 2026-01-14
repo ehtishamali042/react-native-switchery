@@ -23,7 +23,7 @@ export const Demo = () => {
 
   return (
     <Switch
-      isExpanded={value}
+      value={value}
       onValueChange={setValue}
       variant="info"
       size="large"
@@ -36,7 +36,7 @@ export const Demo = () => {
 
 | Prop                                                | Description                                                          |
 | --------------------------------------------------- | -------------------------------------------------------------------- |
-| `isExpanded`                                        | Current boolean value.                                               |
+| `value`                                             | Current boolean value.                                               |
 | `onValueChange`                                     | Callback invoked when toggled.                                       |
 | `variant`                                           | Built-in palette: `primary`, `info`, `success`, `warning`, `danger`. |
 | `size`                                              | `mini`, `small`, `default`, or `large`.                              |

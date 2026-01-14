@@ -6,7 +6,7 @@ import { getSwitchMetrics } from './utils';
 import { useSwitchAnimation, useSwitchStyles } from './hooks';
 
 export const Switch: React.FC<SwitchProps> = ({
-  isExpanded,
+  value,
   activeColor,
   inactiveColor,
   thumbColor,
@@ -26,7 +26,7 @@ export const Switch: React.FC<SwitchProps> = ({
     getSwitchMetrics(size);
 
   const { scaleXAnim, scaleYAnim, thumbTranslateX } = useSwitchAnimation({
-    isExpanded,
+    value,
     pillWidth,
     thumbSize,
     thumbMargin,
@@ -42,7 +42,7 @@ export const Switch: React.FC<SwitchProps> = ({
       trackBorderWidth,
       thumbBorderColor,
       thumbBorderWidth,
-      isExpanded,
+      value,
       pillWidth,
       pillHeight,
       thumbSize,
@@ -52,11 +52,11 @@ export const Switch: React.FC<SwitchProps> = ({
     <View style={switchStyles.wrapper}>
       <Pressable
         style={switchStyles.container}
-        onPress={() => !disabled && onValueChange(!isExpanded)}
+        onPress={() => !disabled && onValueChange(!value)}
         disabled={disabled}
         testID={testID}
         accessibilityRole="switch"
-        accessibilityState={{ disabled, checked: isExpanded }}
+        accessibilityState={{ disabled, checked: value }}
         accessibilityLabel={accessibilityLabel}
         accessibilityHint={accessibilityHint}
       >

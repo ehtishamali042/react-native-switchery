@@ -37,7 +37,7 @@ export const NotificationToggle = () => {
 
   return (
     <Switch
-      isExpanded={enabled}
+      value={enabled}
       onValueChange={setEnabled}
       variant="success"
       size="large"
@@ -54,7 +54,7 @@ export const NotificationToggle = () => {
 
 | Prop                 | Type                                                        | Default           | Description                                               |
 | -------------------- | ----------------------------------------------------------- | ----------------- | --------------------------------------------------------- |
-| `isExpanded`         | `boolean`                                                   | –                 | Controlled value of the switch.                           |
+| `value`              | `boolean`                                                   | –                 | Controlled value of the switch.                           |
 | `onValueChange`      | `(value: boolean) => void`                                  | `() => {}`        | Callback fired after a press toggles the value.           |
 | `variant`            | `'primary' \| 'info' \| 'success' \| 'warning' \| 'danger'` | `primary`         | Built-in palette presets (overridden by explicit colors). |
 | `activeColor`        | `string`                                                    | variant color     | Fill color when expanded.                                 |
