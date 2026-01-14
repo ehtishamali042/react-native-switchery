@@ -2,8 +2,10 @@
 
 [![npm version](https://img.shields.io/npm/v/react-native-switchery.svg?color=0b7&label=npm)](https://www.npmjs.com/package/react-native-switchery)
 [![GitHub](https://img.shields.io/badge/github-react--native--switchery-181717?logo=github&logoColor=white)](https://github.com/ehtishamali042/react-native-switchery)
+[![iOS support](https://img.shields.io/badge/iOS-available-000000?logo=apple&logoColor=white)](https://reactnative.dev/docs/getting-started)
+[![Android support](https://img.shields.io/badge/Android-available-3DDC84?logo=android&logoColor=white)](https://reactnative.dev/docs/getting-started)
 
-React Native Switchery is an iOS-inspired switch for React Native. This short guide pulls the key details from the main [README](../README.md) so you can see the API, and demos without digging.
+React Native Switchery is an iOS-inspired switch for React Native that is fully available on both iOS and Android. This short guide pulls the key details from the main [README](../README.md) so you can see the API, and demos without digging.
 
 ## Demo
 
