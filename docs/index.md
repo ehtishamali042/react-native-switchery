@@ -13,6 +13,8 @@ React Native Switchery is an iOS-inspired switch for React Native. This short gu
 
 ```sh
 npm install react-native-switchery
+# or
+yarn add react-native-switchery
 ```
 
 ## Usage
@@ -29,7 +31,7 @@ export const Demo = () => {
       value={value}
       onValueChange={setValue}
       variant="info"
-      size="large"
+      size="small"
     />
   );
 };

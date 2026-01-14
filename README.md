@@ -25,25 +25,21 @@ npm install react-native-switchery
 yarn add react-native-switchery
 ```
 
-### Basic usage
+## Usage
 
 ```tsx
 import React from 'react';
 import { Switch } from 'react-native-switchery';
 
-export const NotificationToggle = () => {
-  const [enabled, setEnabled] = React.useState(false);
+export const Demo = () => {
+  const [value, setValue] = React.useState(false);
 
   return (
     <Switch
-      value={enabled}
-      onValueChange={setEnabled}
-      variant="success"
-      size="large"
-      trackBorderWidth={2}
-      thumbBorderColor="rgba(0,0,0,0.2)"
-      accessibilityLabel="Notifications"
-      accessibilityHint="Enable or disable push notifications"
+      value={value}
+      onValueChange={setValue}
+      variant="info"
+      size="small"
     />
   );
 };
