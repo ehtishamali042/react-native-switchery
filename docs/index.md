@@ -45,13 +45,3 @@ export const Demo = () => {
 | `thumbBorderColor` / `thumbBorderWidth`             | Customize thumb outline.                                             |
 | `disabled`                                          | Disables interaction and shows overlay.                              |
 | `testID`, `accessibilityLabel`, `accessibilityHint` | Testing and accessibility helpers.                                   |
-
-## Publishing checklist
-
-1. `npm install`
-2. `npm run pack:preview`
-3. `npm version <bump>`
-4. `npm publish --access public`
-5. `git push --follow-tags`
-
-After pushing to GitHub, enable **Settings → Pages → Branch: main / Folder: /docs** to host this site.
