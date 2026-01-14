@@ -1,9 +1,8 @@
 # react-native-switchery
 
-An iOS-inspired, highly customizable switch component for React Native with smooth thumb glides, elastic pill fill, and first-class accessibility support.
+[![npm version](https://img.shields.io/npm/v/react-native-switchery.svg?color=0b7&label=npm)](https://www.npmjs.com/package/react-native-switchery)
 
-- Repo: https://github.com/ehtishamali042/react-native-switchery
-- Docs: https://ehtishamali042.github.io/react-native-switchery
+An iOS-inspired, highly customizable switch component for React Native with smooth thumb glides, elastic pill fill, and first-class accessibility support.
 
 ## Demo
 

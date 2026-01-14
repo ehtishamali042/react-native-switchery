@@ -1,5 +1,8 @@
 # React Native Switchery
 
+[![npm version](https://img.shields.io/npm/v/react-native-switchery.svg?color=0b7&label=npm)](https://www.npmjs.com/package/react-native-switchery)
+[![GitHub](https://img.shields.io/badge/github-react--native--switchery-181717?logo=github&logoColor=white)](https://github.com/ehtishamali042/react-native-switchery)
+
 React Native Switchery is an iOS-inspired switch for React Native. This short guide pulls the key details from the main [README](../README.md) so you can see the API, and demos without digging.
 
 ## Demo
