@@ -1,6 +1,6 @@
 {
   "name": "react-native-switchery",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A customizable, iOS-inspired animated switch component for React Native",
   "license": "MIT",
   "author": "Ehtisham Ali",
