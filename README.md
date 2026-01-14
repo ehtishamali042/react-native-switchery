@@ -2,9 +2,12 @@
 
 An iOS-inspired, highly customizable switch component for React Native with smooth thumb glides, elastic pill fill, and first-class accessibility support.
 
-https://github.com/ehtishamali042/react-native-switchery
+- Repo: https://github.com/ehtishamali042/react-native-switchery
+- Docs: https://ehtishamali042.github.io/react-native-switchery
 
-> Tip: Add a demo GIF at `docs/assets/switch-demo.gif` and GitHub will show it here once committed.
+## Demo
+
+<video src="https://github.com/ehtishamali042/react-native-switchery/raw/main/docs/assets/switchery-demo.mov" controls width="300" />
 
 ## Features
 
@@ -13,7 +16,9 @@ https://github.com/ehtishamali042/react-native-switchery
 - 🛠️ **Fine-grained styling** – Control track/thumb borders, sizes, and shadows.
 - 🧠 **Accessibility ready** – Switch role, disabled/checked state, custom labels and hints.
 
-## Installation
+## Quick Start
+
+### Installation
 
 ```sh
 npm install react-native-switchery
@@ -21,7 +26,7 @@ npm install react-native-switchery
 yarn add react-native-switchery
 ```
 
-## Usage
+### Basic usage
 
 ```tsx
 import React from 'react';
@@ -47,18 +52,23 @@ export const NotificationToggle = () => {
 
 ### Props
 
-| Prop                                           | Type                       | Default        | Description                                          |
-| ---------------------------------------------- | -------------------------- | -------------- | ---------------------------------------------------- | --------- | --------- | -------------------------- | ------------------------- |
-| `isExpanded`                                   | `boolean`                  | –              | Current value of the switch.                         |
-| `onValueChange`                                | `(value: boolean) => void` | `() => {}`     | Callback when the switch toggles.                    |
-| `variant`                                      | `'primary'                 | 'info'         | 'success'                                            | 'warning' | 'danger'` | `primary`                  | Built-in palette presets. |
-| `activeColor` / `inactiveColor` / `thumbColor` | `string`                   | palette-driven | Override colors individually.                        |
-| `size`                                         | `'mini'                    | 'small'        | 'default'                                            | 'large'`  | `default` | Track/thumb preset sizing. |
-| `trackBorderColor` / `thumbBorderColor`        | `string`                   | contextual     | Customize border colors.                             |
-| `trackBorderWidth` / `thumbBorderWidth`        | `number`                   | `1`            | Customize border widths.                             |
-| `disabled`                                     | `boolean`                  | `false`        | Disables toggle interaction; shows overlay.          |
-| `testID`                                       | `string`                   | `switch`       | Testing identifier (overlay uses `testID-disabled`). |
-| `accessibilityLabel` / `accessibilityHint`     | `string`                   | –              | Accessibility metadata forwarded to `Pressable`.     |
+| Prop                 | Type                                                        | Default           | Description                                               |
+| -------------------- | ----------------------------------------------------------- | ----------------- | --------------------------------------------------------- |
+| `isExpanded`         | `boolean`                                                   | –                 | Controlled value of the switch.                           |
+| `onValueChange`      | `(value: boolean) => void`                                  | `() => {}`        | Callback fired after a press toggles the value.           |
+| `variant`            | `'primary' \| 'info' \| 'success' \| 'warning' \| 'danger'` | `primary`         | Built-in palette presets (overridden by explicit colors). |
+| `activeColor`        | `string`                                                    | variant color     | Fill color when expanded.                                 |
+| `inactiveColor`      | `string`                                                    | variant color     | Track color when collapsed.                               |
+| `thumbColor`         | `string`                                                    | variant color     | Thumb fill color.                                         |
+| `size`               | `'mini' \| 'small' \| 'default' \| 'large'`                 | `default`         | Track/thumb preset dimensions.                            |
+| `trackBorderColor`   | `string`                                                    | contextual        | Outline color for the pill.                               |
+| `trackBorderWidth`   | `number`                                                    | `1`               | Outline width for the pill.                               |
+| `thumbBorderColor`   | `string`                                                    | `rgba(0,0,0,0.1)` | Thumb outline color.                                      |
+| `thumbBorderWidth`   | `number`                                                    | `1`               | Thumb outline width.                                      |
+| `disabled`           | `boolean`                                                   | `false`           | Disables presses and shows a frosted overlay.             |
+| `testID`             | `string`                                                    | `switch`          | Identifier for testing (overlay uses `testID-disabled`).  |
+| `accessibilityLabel` | `string`                                                    | –                 | VoiceOver/TalkBack label.                                 |
+| `accessibilityHint`  | `string`                                                    | –                 | VoiceOver/TalkBack hint.                                  |
 
 ## Development
 

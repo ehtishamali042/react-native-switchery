@@ -2,6 +2,10 @@
 
 Welcome to the documentation site. These docs mirror the highlights from the main [README](../README.md) so you can host them via GitHub Pages.
 
+## Demo
+
+<video src="https://github.com/ehtishamali042/react-native-switchery/raw/main/docs/assets/switchery-demo.mov" controls width="320"></video>
+
 ## Installation
 
 ```sh
