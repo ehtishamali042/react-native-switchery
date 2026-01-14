@@ -1,6 +1,6 @@
 # React Native Switchery
 
-Welcome to the documentation site. These docs mirror the highlights from the main [README](../README.md) so you can host them via GitHub Pages.
+React Native Switchery is an iOS-inspired switch for React Native. This short guide pulls the key details from the main [README](../README.md) so you can see the API, and demos without digging.
 
 ## Demo
 
