@@ -1,0 +1,34 @@
+{
+  "name": "react-native-switchery",
+  "version": "0.1.0",
+  "description": "A customizable, iOS-inspired animated switch component for React Native",
+  "license": "MIT",
+  "author": "Ehtisham Ali",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ehtishamali042/react-native-switchery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ehtishamali042/react-native-switchery/issues"
+  },
+  "homepage": "https://ehtishamali042.github.io/react-native-switchery",
+  "keywords": [
+    "react-native",
+    "switch",
+    "toggle",
+    "component",
+    "ios",
+    "animation"
+  ],
+  "main": "index.tsx",
+  "types": "index.tsx",
+  "files": [
+    "index.tsx",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "pack:preview": "npm pack --dry-run"
+  }
+}
