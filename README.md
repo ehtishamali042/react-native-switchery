@@ -7,7 +7,7 @@ An iOS-inspired, highly customizable switch component for React Native with smoo
 
 ## Demo
 
-<img src="https://github.com/ehtishamali042/react-native-switchery/raw/main/docs/assets/switchery-demo.gif" alt="Switchery demo" width="220" />
+<img src="https://github.com/ehtishamali042/react-native-switchery/raw/main/docs/assets/switchery-demo.gif" alt="Switchery demo" width="420" />
 
 ## Features
 

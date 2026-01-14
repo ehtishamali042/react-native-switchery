@@ -4,7 +4,7 @@ Welcome to the documentation site. These docs mirror the highlights from the mai
 
 ## Demo
 
-<img src="https://github.com/ehtishamali042/react-native-switchery/raw/main/docs/assets/switchery-demo.gif" alt="Switchery demo" width="240" />
+<img src="https://github.com/ehtishamali042/react-native-switchery/raw/main/docs/assets/switchery-demo.gif" alt="Switchery demo" width="440" />
 
 ## Installation
 
