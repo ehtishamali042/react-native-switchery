@@ -70,28 +70,6 @@ export const NotificationToggle = () => {
 | `accessibilityLabel` | `string`                                                    | –                 | VoiceOver/TalkBack label.                                 |
 | `accessibilityHint`  | `string`                                                    | –                 | VoiceOver/TalkBack hint.                                  |
 
-## Development
-
-```sh
-npm install
-npm run pack:preview # inspect npm package contents without publishing
-```
-
-## Release checklist
-
-1. `npm run pack:preview` – ensure the tarball only contains `index.tsx`, `lib/`, `README.md`, and `LICENSE`
-2. `npm version <patch|minor|major>`
-3. `npm publish --access public`
-4. `git push --follow-tags`
-
-## Documentation site
-
-This repo includes a `docs/` folder ready for GitHub Pages. After pushing to GitHub:
-
-1. Go to **Settings → Pages**.
-2. Choose **Deploy from branch** and set **Branch: `main` / Folder: `/docs`**.
-3. The README content will be visible at `https://ehtishamali042.github.io/react-native-switchery`.
-
 ## License
 
 MIT © Ehtisham Ali
